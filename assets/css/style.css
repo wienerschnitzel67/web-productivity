@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Piper';
+    src: url('../fonts/Piper.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Piper', Arial, sans-serif;
+    background-color: #fff7fa;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.widget {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.todo {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-input {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.task-field {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.task-item form {
+    margin: 0;
+}
+
+.task-button {
+    display: flex;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.completed-task {
+    text-decoration: line-through;
+}
+
+.timer {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.timer-display {
+    font-size: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.timer-button {
+    display: flex;
+    gap: 10px;
+}
+
+.timer-button button {
+    font-family: 'Piper', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.timer-circle {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+
+    background: conic-gradient(
+            #e9b6c8 100%,
+            #f5dce5 100%
+    );
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-circle::before {
+    content: "";
+    width: 135px;
+    height: 135px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.calendar {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.calender-container {
+    display: grid;
+
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 100%;
+    text-align: center;
+    gap: 10px;
+}
+
+.calendar-grid > div {
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.today {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #f3c4d4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    justify-items: center;
+}
