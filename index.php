@@ -149,12 +149,20 @@ $tasks = $stmt->fetchAll();
         <h2>Music</h2>
     </section>
 
-    <section class="widget">
+    <section class="widget weather">
         <h2>Weather</h2>
+        <div id="weather-location">Finding location ...</div>
+            <div class="weather-main">
+                <img id="weather-icon" src="" alt="Weather icon">
+                <div id="weather-temp">--°C</div>
+            </div>
+
+        <div id="weather-condition">Loading ...</div>
     </section>
 </main>
 
 <script src="assets/js/timer.js"></script>
 <script src="assets/js/calendar.js"></script>
+<script src="assets/js/weather.js"></script>
 </body>
 </html>
