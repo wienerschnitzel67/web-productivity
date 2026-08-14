@@ -16,22 +16,19 @@ Small productivity management tool mainly written in PHP + JS.
   - Automatically displays the current month
   - Automatically generates the correct number of days
   - Highlights the current day
+  - Previous and next month function
 
-
-# Planned features
-- Previous / next month navigation
-- User customization (e.g. light and dark mode)
-- Music player (Spotify API?)
 - Weather API
+  - Fetches coordinates (city), temperature and condition via the Big Data Cloud and Open Meteo
+  - Pixelated weather icons for specific conditions ("Sunny", "Rainy", "Thunderstorm" ...)
 
-
-# Technologies
-- PHP
-- MySQL
-- PDO
-- HTML
-- CSS
-- JS
+# Requirements
+- PHP 8.x or higher
+- MySQL or MariaDB
+- Web server (Apache or similar) -> this is still a locally hosted project
+- Browser with JS enabled
+- Browser location permission for the Weather widget
+- Internet connection for weather and location APIs
 
 # Status
 This is still a WIP and just for fun <3
