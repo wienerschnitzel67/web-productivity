@@ -117,9 +117,16 @@ $tasks = $stmt->fetchAll();
     <!-- Calendar -->
     <section class="widget calendar">
         <h2>Calendar</h2>
+
         <div class="calendar-container">
-            <h3 id="calendar-month"></h3>
-            <div class="calendar-grid" id="calendar-grid">
+
+            <div class="calendar-header">
+                <button id="prev-month">&lt;</button>
+                <h3 id="calendar-month"></h3>
+                <button id="next-month">&gt;</button>
+            </div>
+
+            <div class="calendar-weekdays">
                 <div>Mon</div>
                 <div>Tue</div>
                 <div>Wed</div>
@@ -128,6 +135,9 @@ $tasks = $stmt->fetchAll();
                 <div>Sat</div>
                 <div>Sun</div>
             </div>
+
+            <div class="calendar-days" id="calendar-days"></div>
+
         </div>
     </section>
 
